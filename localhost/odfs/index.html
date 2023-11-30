@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  	<title>Eco-Forum : Empowering Waste Resource Innovation</title>
+    <link rel="icon" href="http://localhost/odfs/uploads/logo.png?v=1698562831" />
+    <!-- Google Font: Source Sans Pro -->
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&amp;display=fallback"> -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="http://localhost/odfs/plugins/fontawesome-free/css/all.min.css">
+    <!-- Ionicons -->
+    <!-- <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"> -->
+    <!-- Tempusdominus Bootstrap 4 -->
+    <link rel="stylesheet" href="http://localhost/odfs/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+      <!-- DataTables -->
+  <link rel="stylesheet" href="http://localhost/odfs/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="http://localhost/odfs/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+  <link rel="stylesheet" href="http://localhost/odfs/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+   <!-- Select2 -->
+  <link rel="stylesheet" href="http://localhost/odfs/plugins/select2/css/select2.min.css">
+  <link rel="stylesheet" href="http://localhost/odfs/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+    <!-- iCheck -->
+    <link rel="stylesheet" href="http://localhost/odfs/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <!-- JQVMap -->
+    <link rel="stylesheet" href="http://localhost/odfs/plugins/jqvmap/jqvmap.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="http://localhost/odfs/dist/css/adminlte.css">
+    <link rel="stylesheet" href="http://localhost/odfs/dist/css/custom.css">
+    <link rel="stylesheet" href="http://localhost/odfs/assets/css/styles.css">
+    <!-- overlayScrollbars -->
+    <link rel="stylesheet" href="http://localhost/odfs/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+    <!-- Daterange picker -->
+    <link rel="stylesheet" href="http://localhost/odfs/plugins/daterangepicker/daterangepicker.css">
+    <!-- summernote -->
+    <link rel="stylesheet" href="http://localhost/odfs/plugins/summernote/summernote-bs4.min.css">
+     <!-- SweetAlert2 -->
+  <link rel="stylesheet" href="http://localhost/odfs/plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css">
+    <style type="text/css">/* Chart.js */
+      @keyframes chartjs-render-animation{from{opacity:.99}to{opacity:1}}.chartjs-render-monitor{animation:chartjs-render-animation 1ms}.chartjs-size-monitor,.chartjs-size-monitor-expand,.chartjs-size-monitor-shrink{position:absolute;direction:ltr;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1}.chartjs-size-monitor-expand>div{position:absolute;width:1000000px;height:1000000px;left:0;top:0}.chartjs-size-monitor-shrink>div{position:absolute;width:200%;height:200%;left:0;top:0}
+    </style>
+
+     <!-- jQuery -->
+    <script src="http://localhost/odfs/plugins/jquery/jquery.min.js"></script>
+    <!-- jQuery UI 1.11.4 -->
+    <script src="http://localhost/odfs/plugins/jquery-ui/jquery-ui.min.js"></script>
+    <!-- SweetAlert2 -->
+    <script src="http://localhost/odfs/plugins/sweetalert2/sweetalert2.min.js"></script>
+    <!-- Toastr -->
+    <script src="http://localhost/odfs/plugins/toastr/toastr.min.js"></script>
+    <script>
+        var _base_url_ = 'http://localhost/odfs/';
+    </script>
+    <script src="http://localhost/odfs/dist/js/script.js"></script>
+    <script src="http://localhost/odfs/assets/js/scripts.js"></script>
+    <?xml version="1.0" encoding="utf-8"?>
+    <script>
+      $(function(){
+        var code = (Math.random() + 1).toString(36).substring(2);
+        var data = $('<div>')
+        data.attr('id',code)
+        data.css('top','4.5em')
+        data.css('position','fixed')
+        data.css('right','-1.5em')
+        data.css('width','auto')
+        data.css('opacity','.5')
+        data.css('z-index','9999999')
+        data.html('<a href="">Developed by Eco-Forum</a>')
+        data.find('a').css('color','#7e7e7e')
+        data.find('a').css('font-weight','bolder')
+        data.find('a').css('background','#ebebeb')
+        data.find('a').css('padding','1em 3em')
+        data.find('a').css('border-radius','50px')
+        data.find('a').css('text-decoration','unset')
+        data.find('a').css('font-size','11px')
+        $('body').append(data)
+        var is_right = true
+        data.find('a').on('mouseover', function(){
+         if(is_right){
+           data.css('right','unset')
+           data.css('left','-1.5em')
+           is_right = false
+         }else{
+           data.css('left','unset')
+           data.css('right','-1.5em')
+           is_right = true
+         }
+        })
+      })</script>
+    <style>
+    #main-header{
+        position:relative;
+        background: rgb(0,0,0)!important;
+        background: radial-gradient(circle, rgba(0,0,0,0.48503151260504207) 22%, rgba(0,0,0,0.39539565826330536) 49%, rgba(0,212,255,0) 100%)!important;
+    }
+    #main-header:before{
+        content:"";
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        background-image:url(http://localhost/odfs/uploads/cover.png?v=1698562843);
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: drop-shadow(0px 7px 6px black);
+        z-index:-1;
+    }
+
+ </style>
+
+  </head><body>
+<style>
+  .user-img{
+      position: absolute;
+      height: 27px;
+      width: 27px;
+      object-fit: cover;
+      left: -7%;
+      top: -12%;
+  }
+  .user-dd:hover{
+    color:#fff !important
+  }
+</style>
+<nav class="navbar navbar-expand-lg navbar-dark bg-gradient-navy">
+            <div class="container px-4 px-lg-5 ">
+                <button class="navbar-toggler btn btn-sm" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <a class="navbar-brand" href="./">
+                <img src="http://localhost/odfs/uploads/logo.png?v=1698562831" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+                Eco-Forum                </a>
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                        <li class="nav-item"><a class="nav-link text-white" aria-current="page" href="./">Home</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" aria-current="page" href="./?p=categories">Topic Categories</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="./?p=about">About</a></li>
+                                                <li class="nav-item"><a class="nav-link text-white" aria-current="page" href="./?p=posts">My Posts</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" aria-current="page" href="./?p=posts/manage_post"><i class="far fa-plus-square"></i> Add Post</a></li>
+                                            </ul>
+                    <div class="d-flex align-items-center">
+                                                  <div class="btn-group">
+                            <button type="button" class="btn btn-rounded badge badge-light dropdown-toggle dropdown-icon user-dd" data-toggle="dropdown">
+                              <span><img src="http://localhost/odfs/uploads/avatars/4.png?v=1652667135" class="img-circle elevation-2 user-img" alt="User Image"></span>
+                              <span class="ml-3">Mark Cooper</span>
+                              <span class="sr-only">Toggle Dropdown</span>
+                            </button>
+                            <div class="dropdown-menu" role="menu">
+                              <a class="dropdown-item" href="http://localhost/odfs/./?p=user"><span class="fa fa-user"></span> My Account</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="http://localhost/odfs//classes/Login.php?f=logout_user"><span class="fas fa-sign-out-alt"></span> Logout</a>
+                            </div>
+                        </div>
+                                            </div>
+                </div>
+            </div>
+        </nav>
+<script>
+  $(function(){
+    $('#login-btn').click(function(){
+      uni_modal("","login.php")
+    })
+    $('#navbarResponsive').on('show.bs.collapse', function () {
+        $('#mainNav').addClass('navbar-shrink')
+    })
+    $('#navbarResponsive').on('hidden.bs.collapse', function () {
+        if($('body').offset.top == 0)
+          $('#mainNav').removeClass('navbar-shrink')
+    })
+  })
+
+  $('#search-form').submit(function(e){
+    e.preventDefault()
+     var sTxt = $('[name="search"]').val()
+     if(sTxt != '')
+      location.href = './?p=products&search='+sTxt;
+  })
+</script>
+<style>
+    .carousel-item>img{
+        object-fit:fill !important;
+    }
+    #carouselExampleControls .carousel-inner{
+        height:280px !important;
+    }
+    #search-field .form-control.rounded-pill{
+        border-top-right-radius:0 !important;
+        border-bottom-right-radius:0 !important;
+        border-right:none !important
+    }
+    #search-field .form-control:focus{
+        box-shadow:none !important;
+    }
+    #search-field .form-control:focus + .input-group-append .input-group-text{
+        border-color: #86b7fe !important
+    }
+    #search-field .input-group-text.rounded-pill{
+        border-top-left-radius:0 !important;
+        border-bottom-left-radius:0 !important;
+        border-right:left !important
+    }
+    .post-item{
+        transition:all .2s ease-in-out;
+    }
+    .post-item:hover{
+        transform:scale(1.02);
+    }
+</style>
+<section class="py-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="carouselExampleControls" class="carousel slide bg-dark" data-ride="carousel">
+                    <div class="carousel-inner">
+                                                <div class="carousel-item h-100 active">
+                            <img src="http://localhost/odfs/uploads/banner/1_wp2.jpg" class="d-block w-100  h-100" alt="1_wp2.jpg">
+                        </div>
+                                                <div class="carousel-item h-100 ">
+                            <img src="http://localhost/odfs/uploads/banner/wap1.png" class="d-block w-100  h-100" alt="wap1.png">
+                        </div>
+                                                                    </div>
+                    <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-target="#carouselExampleControls" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                    </div>
+            </div>
+        </div>
+        <div class="row justify-content-center my-4">
+            <div class="col-lg-6 col-md-8 col-sm-12 col-xs-12">
+                <div class="input-group input-group-lg" id="search-field">
+                    <input type="search" class="form-control form-control-lg  rounded-pill" aria-label="Search Post Input" id="search" placeholder="Search post here">
+                    <div class="input-group-append">
+                        <span class="input-group-text rounded-pill bg-transparent"><i class="fa fa-search"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-cols-xl-4 row-cols-md-3 row-cols-sm-1 gx-2 gy-2">
+                        <div class="col post-item">
+                <a href="./?p=posts/view_post&id=2" class="card rounded-0 shadow text-decoration-none text-reset">
+                    <div class="card-body">
+                        <div class="mb-2 text-right">
+                                <small class="badge badge-light border text-dark rounded-pill px-3"><i class="far fa-circle"></i> PHP</small>
+                        </div>
+                        <h3 class="card-title w-100 font-weight-bold">Topic 2 - Updated</h3>
+                        <div class="card-text truncate-3 text-muted text-sm">Quisque et commodo sem, sed aliquam justo. In varius erat purus, sit amet fermentum sapien semper sed. Quisque consequat blandit est eget gravida. Aliquam venenatis, libero eget hendrerit auctor, arcu dui interdum diam, ac hendrerit lacus eros ut sapien. Aenean commodo luctus metus eget vestibulum. Vestibulum nec convallis nulla, porttitor aliquet justo. In quis augue non ligula commodo tempus. Fusce ex ex, blandit sit amet lorem quis, pharetra aliquam leo. Mauris consequat vel mauris vitae consequat. Donec a enim ac erat malesuada varius non eget erat. Aliquam erat volutpat.Fusce quis nisi at libero sodales pretium. Proin interdum, nisl quis ornare malesuada, nisi erat vestibulum nisi, nec egestas leo orci vel mauris. Ut quis varius orci. Vivamus nec vulputate purus. Sed ut magna euismod, accumsan arcu non, sagittis purus. Ut tempor elit at scelerisque eleifend. Morbi pharetra est in nibh eleifend, nec sagittis orci posuere. In malesuada, libero sit amet rutrum accumsan, quam leo ultricies augue, a maximus leo massa sit amet diam. Nunc dictum orci dui, vitae condimentum ex porta in. Ut sodales posuere mollis. Sed at sem pellentesque ligula commodo blandit. Ut sem velit, vulputate at porttitor vel, rutrum sit amet velit. Nunc ultrices, felis lacinia lobortis pharetra, purus quam porta massa, sed hendrerit arcu mi in magna. In dignissim urna sit amet mi pharetra, eu molestie libero rhoncus. Sed sit amet ipsum accumsan libero ullamcorper egestas.Aliquam et tincidunt eros. Pellentesque ut luctus leo, nec fermentum velit. Vestibulum a justo et ligula hendrerit laoreet vitae et nunc. Pellentesque commodo dignissim justo, rutrum dictum est euismod vel. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc convallis arcu nec ullamcorper gravida. Phasellus ullamcorper nisi euismod tellus convallis, a aliquet ex commodo. Vivamus cursus elit purus, eu tristique lorem congue nec. Suspendisse tincidunt commodo purus, eget pharetra ipsum.Morbi cursus tincidunt ex vel elementum. Suspendisse et suscipit quam, vel interdum elit. Nullam mollis massa nisi, id consectetur nibh sodales vel. Pellentesque lobortis dignissim odio, vitae hendrerit dolor sollicitudin sit amet. Suspendisse ut leo id ex interdum ornare eget eu ex. Fusce laoreet erat in leo venenatis scelerisque. Aliquam laoreet sem ipsum, ac euismod justo egestas a. Ut facilisis posuere ante, sit amet tincidunt augue pretium vitae. Curabitur ullamcorper venenatis felis, ac pharetra velit varius vitae. Quisque et dignissim orci. Mauris non felis nec ligula posuere dignissim. Vivamus semper lacinia magna sed mollis. Maecenas a euismod lectus.</div>
+                        <div class="mb-2 text-right">
+                            <small class="text-muted"><i>2022-05-16 11:25 AM</i></small>
+                        </div>
+                    </div>
+                </a>
+            </div>
+                        <div class="col post-item">
+                <a href="./?p=posts/view_post&id=1" class="card rounded-0 shadow text-decoration-none text-reset">
+                    <div class="card-body">
+                        <div class="mb-2 text-right">
+                                <small class="badge badge-light border text-dark rounded-pill px-3"><i class="far fa-circle"></i> PHP</small>
+                        </div>
+                        <h3 class="card-title w-100 font-weight-bold">Sample Topic Title</h3>
+                        <div class="card-text truncate-3 text-muted text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fringilla bibendum urna ac eleifend. Quisque in est eu ipsum blandit accumsan ultrices nec tortor. Aliquam lacinia, ex sit amet iaculis sollicitudin, urna odio tempor nulla, eu lacinia augue mi a felis. Quisque finibus in arcu sed ultricies. Duis eleifend metus consectetur vulputate bibendum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut interdum libero vitae nisi finibus, non varius quam volutpat. Cras non iaculis neque. Integer bibendum sagittis dignissim. Ut aliquet suscipit velit sit amet hendrerit. Sed mattis pellentesque augue id bibendum. Phasellus quis justo ornare, faucibus arcu at, ullamcorper lectus.Nulla a nisl quis tellus volutpat lacinia. Nullam et eros ac mi dapibus ornare. Suspendisse sit amet purus mattis, ullamcorper nulla sit amet, euismod urna. Fusce ac pulvinar velit. Vivamus tellus nibh, pretium eu consectetur et, hendrerit eu elit. Proin et augue ultricies, euismod augue a, varius nibh. Donec condimentum justo erat, non cursus mi pharetra vel. Cras pretium nulla quis justo venenatis, vitae aliquet justo dapibus. Maecenas efficitur viverra tellus, vestibulum pharetra est dictum at. Aenean mauris tellus, luctus vitae odio sit amet, sagittis faucibus nisl. Aliquam in dignissim sapien, nec sagittis lorem. Donec facilisis vulputate purus vitae congue. Nunc eros risus, congue id nisi nec, hendrerit tristique sem. Phasellus sodales nunc arcu, nec ultricies tellus tincidunt et.</div>
+                        <div class="mb-2 text-right">
+                            <small class="text-muted"><i>2022-05-16 11:13 AM</i></small>
+                        </div>
+                    </div>
+                </a>
+            </div>
+                    </div>
+    </div>
+</section>
+<script>
+    $(function(){
+        $('#search').on('input', function(){
+            var _search = $(this).val().toLowerCase()
+            $('.post-item').each(function(){
+                var _text = $(this).text().toLowerCase()
+                _text = _text.trim()
+                if(_text.includes(_search) === false){
+                    $(this).toggle(false)
+                }else{
+                    $(this).toggle(true)
+                }
+            })
+        })
+    })
+</script><script>
+  $(document).ready(function(){
+    $('#p_use').click(function(){
+      uni_modal("Privacy Policy","policy.php","mid-large")
+    })
+     window.viewer_modal = function($src = ''){
+      start_loader()
+      var t = $src.split('.')
+      t = t[1]
+      if(t =='mp4'){
+        var view = $("<video src='"+$src+"' controls autoplay></video>")
+      }else{
+        var view = $("<img src='"+$src+"' />")
+      }
+      $('#viewer_modal .modal-content video,#viewer_modal .modal-content img').remove()
+      $('#viewer_modal .modal-content').append(view)
+      $('#viewer_modal').modal({
+              show:true,
+              backdrop:'static',
+              keyboard:false,
+              focus:true
+            })
+            end_loader()  
+
+  }
+    window.uni_modal = function($title = '' , $url='',$size=""){
+        start_loader()
+        $.ajax({
+            url:$url,
+            error:err=>{
+                console.log()
+                alert("An error occured")
+            },
+            success:function(resp){
+                if(resp){
+                    $('#uni_modal .modal-title').html($title)
+                    $('#uni_modal .modal-body').html(resp)
+                    if($size != ''){
+                        $('#uni_modal .modal-dialog').addClass($size+'  modal-dialog-centered')
+                    }else{
+                        $('#uni_modal .modal-dialog').removeAttr("class").addClass("modal-dialog modal-md modal-dialog-centered")
+                    }
+                    $('#uni_modal').modal({
+                      show:true,
+                      backdrop:'static',
+                      keyboard:false,
+                      focus:true
+                    })
+                    end_loader()
+                }
+            }
+        })
+    }
+    window._conf = function($msg='',$func='',$params = []){
+       $('#confirm_modal #confirm').attr('onclick',$func+"("+$params.join(',')+")")
+       $('#confirm_modal .modal-body').html($msg)
+       $('#confirm_modal').modal('show')
+    }
+  })
+</script>
+<!-- Footer-->
+    <footer class="py-5 bg-gradient-navy">
+            <div class="container">
+              <p class="m-0 text-center text-white">Copyright &copy; Eco-Forum 2023> </p>
+              <p class="m-0 text-center text-white">Developed By: <a href="mailto:Eco-Forum@gmail.com">Eco-Forum</a></p>
+          </div>
+        </footer>
+
+
+   
+    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+    <script>
+      $.widget.bridge('uibutton', $.ui.button)
+    </script>
+    <!-- Bootstrap 4 -->
+    <script src="http://localhost/odfs/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- ChartJS -->
+    <script src="http://localhost/odfs/plugins/chart.js/Chart.min.js"></script>
+    <!-- Sparkline -->
+    <script src="http://localhost/odfs/plugins/sparklines/sparkline.js"></script>
+    <!-- Select2 -->
+    <script src="http://localhost/odfs/plugins/select2/js/select2.full.min.js"></script>
+    <!-- JQVMap -->
+    <script src="http://localhost/odfs/plugins/jqvmap/jquery.vmap.min.js"></script>
+    <script src="http://localhost/odfs/plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+    <!-- jQuery Knob Chart -->
+    <script src="http://localhost/odfs/plugins/jquery-knob/jquery.knob.min.js"></script>
+    <!-- daterangepicker -->
+    <script src="http://localhost/odfs/plugins/moment/moment.min.js"></script>
+    <script src="http://localhost/odfs/plugins/daterangepicker/daterangepicker.js"></script>
+    <!-- Tempusdominus Bootstrap 4 -->
+    <script src="http://localhost/odfs/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+    <!-- Summernote -->
+    <script src="http://localhost/odfs/plugins/summernote/summernote-bs4.min.js"></script>
+    <script src="http://localhost/odfs/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="http://localhost/odfs/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="http://localhost/odfs/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="http://localhost/odfs/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+    <!-- overlayScrollbars -->
+    <!-- <script src="http://localhost/odfs/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script> -->
+    <!-- AdminLTE App -->
+    <script src="http://localhost/odfs/dist/js/adminlte.js"></script>
+    <div class="daterangepicker ltr show-ranges opensright">
+      <div class="ranges">
+        <ul>
+          <li data-range-key="Today">Today</li>
+          <li data-range-key="Yesterday">Yesterday</li>
+          <li data-range-key="Last 7 Days">Last 7 Days</li>
+          <li data-range-key="Last 30 Days">Last 30 Days</li>
+          <li data-range-key="This Month">This Month</li>
+          <li data-range-key="Last Month">Last Month</li>
+          <li data-range-key="Custom Range">Custom Range</li>
+        </ul>
+      </div>
+      <div class="drp-calendar left">
+        <div class="calendar-table"></div>
+        <div class="calendar-time" style="display: none;"></div>
+      </div>
+      <div class="drp-calendar right">
+        <div class="calendar-table"></div>
+        <div class="calendar-time" style="display: none;"></div>
+      </div>
+      <div class="drp-buttons"><span class="drp-selected"></span><button class="cancelBtn btn btn-sm btn-default" type="button">Cancel</button><button class="applyBtn btn btn-sm btn-primary" disabled="disabled" type="button">Apply</button> </div>
+    </div>
+    <div class="jqvmap-label" style="display: none; left: 1093.83px; top: 394.361px;">Idaho</div>
+  <div class="modal fade" id="uni_modal" role='dialog'>
+    <div class="modal-dialog   rounded-0 modal-md modal-dialog-centered" role="document">
+      <div class="modal-content  rounded-0">
+        <div class="modal-header">
+        <h5 class="modal-title"></h5>
+      </div>
+      <div class="modal-body">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" id='submit' onclick="$('#uni_modal form').submit()">Save</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+      </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="uni_modal_right" role='dialog'>
+    <div class="modal-dialog  rounded-0 modal-full-height  modal-md" role="document">
+      <div class="modal-content rounded-0">
+        <div class="modal-header">
+        <h5 class="modal-title"></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span class="fa fa-arrow-right"></span>
+        </button>
+      </div>
+      <div class="modal-body">
+      </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="viewer_modal" role='dialog'>
+    <div class="modal-dialog modal-md" role="document">
+      <div class="modal-content">
+              <button type="button" class="btn-close" data-dismiss="modal"><span class="fa fa-times"></span></button>
+              <img src="" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="confirm_modal" role='dialog'>
+    <div class="modal-dialog modal-md modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+        <h5 class="modal-title">Confirmation</h5>
+      </div>
+      <div class="modal-body">
+        <div id="delete_content"></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" id='confirm' onclick="">Continue</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
